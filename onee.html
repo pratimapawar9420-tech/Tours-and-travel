@@ -1,0 +1,275 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Complete responsive bags website desing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    </head>
+    
+<body>
+
+    
+    <header>
+        
+        
+ 
+        <a href="#" class="logo">
+            <img class="logo-img" src="https://cdn.bio.link/uploads/profile_pictures/2022-01-26/Vke4jAfRfXJRzQUp7Fe5G1fE8Tx7kPOZ.png" alt="PurseParadise Logo" />
+        </a>
+        
+        <style>
+        .logo-img {
+            height: 50px;  /* Set your desired height */
+            width: 50px;   /* Set your desired width */
+        }
+        </style>
+        
+            <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="product1.php">Products</a>
+           <a href="customize.php">Customize</a>
+            <a href="review1.php">Review</a>
+            <a href="contanct1.php">Contact</a>
+            <a href="loginuser.php">Admin</a>
+
+            
+        </nav>
+        <div class="icons">
+            <a href="addtocart.php" class="fas fa-shopping-cart"></a>
+            <a href="login.php" class="fas fa-user"></a>
+            <?php
+            $count=0;
+            if(isset($_SESSION['cart']))
+            {
+                $count=count($_SESSION['cart']);
+            }
+            ?>
+            <a href="addtocart.php" class="btn btn-outline-success" style="text-transform: none;">My cart(<?php echo $count;?>)</a>
+   
+
+
+
+        </div>
+    </header>
+    <!--CATEGORY STARTS-->
+   <!--1st bag-->
+<secion class="products" id="products">
+   <h1 class="heading"><span></span></h1>
+   <secion class="products" id="products">
+   <h1 class="heading"><span></span></h1>
+   <secion class="products" id="products">
+   <h1 class="heading">Handbags<span><img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-pink-and-white-female-handbag-png-image_4938220.jpg" width="70px" height="80px" style="vertical-align:middle; margin-right: 10px;"></span>
+   </h1>
+<style>
+.img
+{
+    margin: 5rem;
+}
+    </style>
+</section>
+   <div class="btn-container"><strong>             
+
+      <a href="barrel.php" class="btn">Barrel bags</a>
+      <a href="Traditional.php" class="btn">Traditional bags</a>
+      <a href="Clutch.php" class="btn">Clutch</a>
+      <a href="Asthetic.php" class="btn">Asthetic bags</a>
+      <a href="Officebags.php" class="btn">Office bags</a>
+      <a href="Tote.php" class="btn">Tote</a>
+      <a href="Sling.php" class="btn">Sling bags</a>
+   </div>
+   <style>
+    .btn {
+        text-transform: capitalize; /* Capitalizes the first letter of each word */
+        /* You can also add additional styles here, like padding, color, etc. */
+    }
+</style>
+        </section>
+  
+<style>
+strong 
+{
+     font-size: 2rem; /* Adjust the size as needed */
+}
+.products 
+{
+    text-align: center; /* Center the heading */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Aligns the buttons horizontally at the center */
+    flex-wrap: wrap; /* Ensures the buttons wrap onto new lines if there's not enough space */
+    gap: 10px; /* Adds spacing between the buttons */
+    margin-top: -20px; /* Add some space between heading and buttons */
+}
+
+.btn {
+    margin: top 5rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Set button color to pink */
+    color: white; /* Set button text color to white */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: "Arial", sans-serif; /* Optional: change font if desired */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+.btn:hover {
+    background-color: black; /* Change hover color to a slightly darker pink */
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+    </div>
+  </div>
+</nav>
+            
+    <!--CATEGORY ENDS-->
+
+
+<section class="home" id="home">
+
+                <div class="content">
+            <h3>Beyoud the basics</h3>
+            <span>Reimagine your Ecencials</span>
+            <p>Style yourself</p>
+            <a href="product1.php" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+
+<!--about-->
+<!--
+<style>
+         {
+            margin: 0;
+            height: 100vh; /* Full height */
+            background-image: url("F:\xampp\htdocs\tybca\Beige Simple Minimalist New Arrival Handbag Facebook Post.jpg");
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
+        }
+        </style>
+-->
+    <section class="about" id="about">
+    <h1 class="heading"><span>about</span>us</span></h1>
+
+       
+    <div class="row">
+        <div>
+       
+            <!--**littel imag**<img src="https://mayasbrandstudio.com/wp-content/uploads/2023/09/13J00065-1080x1080.jpg" width="350px" height="390px" style="vertical-align:middle; margin-right: 10px;"></video>-->
+  
+    </div>
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p>Welcome to PurseParadies, where fashion meets functionality! We are passionate about creating beautifully crafted handbags that empower you to express your unique style. Each of our bags is designed with a perfect blend of elegance, versatility, and attention to detail, ensuring that you carry not just a product, but a statement of sophistication.
+At ,PurseParadies we believe that handbags are more than just accessories – they are an extension of your personality. That’s why we offer a wide range of styles, from classic to contemporary, with customizable options that allow you to design a bag that reflects your personal taste.
+    <p>
+    Our commitment to quality is reflected in every stitch and material we use. We carefully select high-quality fabrics and leather to create durable, fashionable bags that can accompany you on all of life’s adventures. Whether you’re looking for a sleek clutch, a spacious tote, or a chic crossbody, we’ve got the perfect bag for every occasion.
+    We are committed to environmentally friendly practices, sourcing materials responsibly and focusing on sustainable production methods, allowing you to feel good about your purchases.
+
+    </p>
+    <img src="https://www.rijac.com/cdn/shop/articles/Eight-Stylish-Handbags.jpg?crop=center&height=500&v=1709806980&width=1000">
+
+        </div>
+        </div>
+    </section>
+   <!-- <marquee behavior="scroll" direction="left">
+    Your scrolling text goes here. It will move from right to left.
+</marquee>-->
+
+    <!--<section class="contact">
+        <div class="contact-box">
+            <h4>MY ACCOUNT</h4>
+            <li><a href="#">My ACCOUNt</a></li>
+            <li><a href="#">checkout </a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">shopping cart</a></li>
+            <li><a href="#">wishinglist</a></li>
+</div>
+
+<div class="contact-box">
+            <h4>Quick links</h4>
+            <li><a href="#">Store location</a></li>
+            <li><a href="#">orders tracking</a></li>
+            <li><a href="#">size guide</a></li>
+            <li><a href="#">my ccount</a></li>
+            <li><a href="#">FAQs</a></li>
+</div>
+
+<div class="contact-box">
+            <h4>INFORMATIONS</h4>
+            <li><a href="#">privacy page</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">delivery informations</a></li>
+            <li><a href="#">terms and condiions</a></li>
+</div>
+
+
+<div class="contact-box">
+            <h4>customer services</h4>
+            <li><a href="#">shipping policy</a></li>
+            <li><a href="#">help and contact</a></li>
+            <li><a href="#">returns and refunds</a></li>
+            <li><a href="#">online stores</a></li>
+            <li><a href="#">terms and condiions</a></li>
+</div>
+
+<div class="contact-box">
+            <h4>fima</h4>
+            <h5>connect with us</h4>
+
+            <div class="social">
+                <a href="#" class='bx bxl-facebook'></i></a>
+                <a href="#" class='bx bxl-instagram-alt'></i></a> 
+                <a href="#" class='bx bxl-twitter'></i></a>               
+</div>     
+</div>
+</section>-->
+    <section class="icons-container">
+
+        <div class="icons">
+           <img src="https://static.vecteezy.com/system/resources/previews/015/517/933/non_2x/illustration-of-a-person-receiving-a-parcel-vector.jpg " height="200px" width="200px">
+            <div class="info">
+                <h1>free delivery</h1>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/350/774/non_2x/doodle-money-bag-dollar-icon-outline-sketch-concept-for-business-and-finance-icon-illustration-free-vector.jpg" height="200px" width="200px">
+            <div class="info">
+                <h1>10 days returns</h1>
+                <span>moneyback garantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="https://st3.depositphotos.com/23395854/36556/i/450/depositphotos_365569278-stock-illustration-vintage-gift-box-hand-drawn.jpg"height="300px" width="200px">
+            <div class="info">
+                <h1>offer & gifts</h1>
+                <span>on all orders</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="https://www.shutterstock.com/image-vector/atm-card-vector-design-modern-600nw-2290829683.jpg" height="200px" width="200px">
+            <div class="info">
+                <h1>secure payment</h1>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    
+</section>
+</body>
+</html>

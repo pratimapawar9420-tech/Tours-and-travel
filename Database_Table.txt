@@ -1,0 +1,67 @@
+tour_details1:
+table name:main_booking
+
+Table names main_booking:
+CREATE TABLE main_booking (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  email VARCHAR(100),
+  age INT,
+  phone VARCHAR(20),
+  address TEXT,
+  tour_guide_name VARCHAR(100),
+  place_name VARCHAR(100),
+  price_per_person DECIMAL(10,2),
+  total_amount DECIMAL(10,2),
+  quantity INT,
+  tour_date DATE,
+  pickup_place VARCHAR(100),
+  drop_place VARCHAR(100),
+  payment_method VARCHAR(50),
+  passport VARCHAR(50),
+  adharcard VARCHAR(50),
+  pancard VARCHAR(50),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO `main_booking`(`id`, `first_name`, `last_name`, `email`, `age`, `phone`, `address`, `tour_guide_name`, `place_name`, `price_per_person`, `total_amount`, `quantity`, `tour_date`, `pickup_place`, `drop_place`, `payment_method`, `passport`, `adharcard`, `pancard`, `created_at`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]','[value-13]','[value-14]','[value-15]','[value-16]','[value-17]','[value-18]','[value-19]','[value-20]')
+
+
+table name:additional_persons
+CREATE TABLE additional_persons (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  booking_id INT,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  email VARCHAR(100),
+  age INT,
+  phone VARCHAR(20),
+  address TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  passport VARCHAR(50),
+  adharcard VARCHAR(50),
+  pancard VARCHAR(50),
+  FOREIGN KEY (booking_id) REFERENCES main_booking(id)
+);
+
+Additional_persons:INSERT INTO `additional_persons`(`id`, `booking_id`, `first_name`, `last_name`, `email`, `age`, `phone`, `address`, `created_at`, `passport`, `adharcard`, `pancard`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]','[value-10]','[value-11]','[value-12]')
+
+
+
+Database register1
+Table name:test1
+CREATE TABLE test1 (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(100),
+  username VARCHAR(50),
+  email VARCHAR(100),
+  password VARCHAR(255)
+);
+
+INSERT INTO `test1`(`fullname`, `username`, `email`, `password`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]')
+
+
+Database Travelcon
+table:contact_form
+INSERT INTO `contact_form`(`id`, `name`, `email`, `phone`, `inquiry_type`, `message`, `submitted_at`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]')
